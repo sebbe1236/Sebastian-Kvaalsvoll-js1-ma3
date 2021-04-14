@@ -6,6 +6,7 @@
   border-radius: 50%;
   background-color: darkgray;
   animation: spin 3s linear infinite;
+  text-align: center;
 }
 
 @keyframes spin {
