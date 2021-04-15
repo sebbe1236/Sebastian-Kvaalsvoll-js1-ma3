@@ -13,9 +13,11 @@ async function gamesResults() {
         break;
       }
 
-      display.innerHTML += `<div>${gamesTotal[i].name}</div>
-        <div>${gamesTotal[i].rating}</div>
-        <div>${gamesTotal.length}</div>
+      display.innerHTML += `<div>${gamesTotal[i].name}<div>
+      <div>${gamesTotal[i].rating}</div>
+      <div>${gamesTotal.length}</div>
+        
+        
         `;
     }
   } catch (error) {
