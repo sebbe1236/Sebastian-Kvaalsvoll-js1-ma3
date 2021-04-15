@@ -7,12 +7,12 @@ async function gamesResults() {
     const response = await fetch(url);
     const result = await response.json();
     const gamesTotal = result.results;
-
     display.innerHTML = "";
     for (let i = 0; i < gamesTotal.length; i++) {
       if (i === 8) {
         break;
       }
+
       display.innerHTML += `<div>${gamesTotal[i].name}</div>
         <div>${gamesTotal[i].rating}</div>
         <div>${gamesTotal.length}</div>
