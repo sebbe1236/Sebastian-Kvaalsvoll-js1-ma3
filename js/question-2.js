@@ -15,10 +15,11 @@ async function gamesResults() {
 
       display.innerHTML += `<div>${gamesTotal[i].name}<div>
       <div>${gamesTotal[i].rating}</div>
-      <div>${gamesTotal.length}</div>
-        
-        
+      
         `;
+    }
+    {
+      display.innerHTML += `${".display-results".length}`;
     }
   } catch (error) {
     display.innerHTML = `<div> An error happened</div>`;
@@ -26,3 +27,5 @@ async function gamesResults() {
 }
 
 gamesResults();
+
+//https://stackoverflow.com/questions/8868741/find-number-of-element-in-string-with-jquery
